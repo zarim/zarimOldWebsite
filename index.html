@@ -7,31 +7,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display:ital@0;1&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- To DO
+                Make site responsive
+                Change modal color
+                Decide on final color scheme
+                Delete unnecessary CSS/pages/folders
+                Add accessibility - tabbing, alt text for images, etc.
+                Figure out security issue
+                Maybe add loading animation for main image?
+        -->
         <div class="home-box">
             <h2 id="head" style="text-align:center;color:white;margin-bottom:2%;"><a href="index.html" id="remove-link-styling">Zari McFadden</a></h2>
             <div class="contact">
-                <a id="form-text" target="_blank" href="mailto:zmuhammad55@gmail.com"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063981/square_t9feuc.png"></a>
-                <a id="form-text" target="_blank" href="https://www.linkedin.com/in/zari-mcfadden-45262978/"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063978/linkedin_pu8l5a.png"></a>
-                <a id="form-text" target="_blank" href="https://twitter.com/ZariMcFadden"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063969/twitter_m2ke5p.png"></a>
-                <a id="form-text" target="_blank" href="https://github.com/zarim"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063978/GitHub-Mark-120px-plus_oe2hvh.png"></a>
+                <a id="form-text" class="form-text" target="_blank" href="mailto:zmuhammad55@gmail.com"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063981/square_t9feuc.png"></a>
+                <a id="form-text" class="form-text" target="_blank" href="https://www.linkedin.com/in/zari-mcfadden-45262978/"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063978/linkedin_pu8l5a.png"></a>
+                <a id="form-text" class="form-text" target="_blank" href="https://twitter.com/ZariMcFadden"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063969/twitter_m2ke5p.png"></a>
+                <a id="form-text" class="form-text" target="_blank" href="https://github.com/zarim"><img id="contact" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063978/GitHub-Mark-120px-plus_oe2hvh.png"></a>
             </div>
             <div class="image-cropper">
-                <img id="headshot" src="images/headshot.jpg">
+                <img id="headshot" src="images/headshot.jpg" alt="headshot of Zari">
             </div>
             <div class="bottom-menu">
-                <p id="about"><button class="button-style" id="btn">PhD Student</button></p>
+                <p id="about"><button class="button-style" id="btn" tabindex="0">PhD Student</button></p>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="close" tabindex="0">&times;</span>
+                        <p id="inner-text">PhD Student</p>
                         <p id="inner-text">Year 1 of...</p>
+                        <p id="inner-text">Computer Science at NC State</p>
                         <p id="inner-text">Research interest areas include: algorithmic bias, AI for good, ethics of AI, etc.</p>
                         <p id="inner-text">Will add more information as I make more progress towards my degree.</p>
                     </div>
                 </div>
-                <p id="about"><button class="button-style" id="btn">Author</button></p>
+                <p id="about"><button class="button-style" id="btn" tabindex="0">Author</button></p>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="close" tabindex="0">&times;</span>
                         <p id="inner-text"><a id="remove-link-styling" target="_blank" href="https://www.amazon.com/18-Things-Ive-Learned-Years-ebook/dp/B07N45J462/ref=sr_1_2?dchild=1&keywords=18+things+i%27ve+learned+in+18+years&qid=1607726831&s=digital-text&sr=1-2">18 Things I've Learned in 18 Years</a></p>
                         <div class="author-content">
                             <div class="author-left">
@@ -47,35 +58,35 @@
                         </div>
                     </div>
                 </div>
-                <p id="about"><button class="button-style" id="btn">Traveler</button></p>
+                <p id="about"><button class="button-style" id="btn" tabindex="0">Traveler</button></p>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="close" tabindex="0">&times;</span>
                         <p id="inner-text">Traveler</p>
                         <p id="traveler-text">I absolutely love to travel and one of my goals is to visit all 7 continents. Right now I've been to 4 of the continents (North & South America, Europe, and Asia). After I finish my PhD, I plan to take a yearlong-trip around the world where I hope to visit even more countries and continents.</p>
                         <p id="traveler-text"><u>Countries Visited:</u> Mexico, Canada, UK, Ireland, Spain, France, Italy, Brazil, Japan...</p>
                         <p id="traveler-text"><u>Bucket List:</u> Antartica, Singapore, Thailand, Indonesia, South Korea, South Africa, Egypt, Costa Rica, Cuba, Portugal, India, Australia, New Zealand, and many more.</p>
                         <div class="photos">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063973/casaMila_ej59xl.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063974/christTheRedeemer_tkkvo6.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063971/coliseum_hsrtdn.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063980/dublinCastle_vi0kbb.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063977/eiffelTower_dpi0ya.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063979/dublinFountain_fmzp5y.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063982/fountain_ev1fdf.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063983/japan_yi9ura.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063981/monaLisa_zqnh4j.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063985/rioForest_zhzngs.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063983/rome_ptsvao.jpg">
-                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063977/tijicaForest_mw8kuy.jpg">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063973/casaMila_ej59xl.jpg" alt="Zari at Casa Mila in Barcelona">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063974/christTheRedeemer_tkkvo6.jpg" alt="Zari in front of the Christ the Redeemer in Brazil">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063971/coliseum_hsrtdn.jpg" alt="Zari at the Coliseum in Rome">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063980/dublinCastle_vi0kbb.jpg" alt="Zari in front of Dublin Castle in Ireland">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063977/eiffelTower_dpi0ya.jpg" alt="Zari in front of the Eiffel Tower in Paris">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063979/dublinFountain_fmzp5y.jpg" alt="Zari in front of a fountain in Dublin, Ireland">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063982/fountain_ev1fdf.jpg" alt="Zari in front of a fountain in Rome">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063983/japan_yi9ura.jpg" alt="Zari in Japan">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063981/monaLisa_zqnh4j.jpg" alt="Zari in front of the Mona Lisa in Paris">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063985/rioForest_zhzngs.jpg" alt="Zari at the gardens in Rio">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063983/rome_ptsvao.jpg" alt="Zari in Rome">
+                            <img id="photo" src="https://res.cloudinary.com/zarimcfadden/image/upload/v1609063977/tijicaForest_mw8kuy.jpg" alt="Zari in the Tijica Forest in Rio">
                         </div>
                         <p id="traveler-text"> Swipe for more.</p>
                     </div>
                 </div>
-                <p id="about"><button class="button-style" id="btn">Occasional Software Engineer</button></p>
+                <p id="about"><button class="button-style" id="btn" tabindex="0">Occasional Software Engineer</button></p>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="close" tabindex="0">&times;</span>
                         <p id="inner-text">Occasional Software Engineer</p>
                         <p id="github"><a target="_blank" id="remove-link-styling" href="resume.pdf"><u>Resume.pdf</u></a></p>
                         <p id="explanation">Link to PDF of my resume.</p>
