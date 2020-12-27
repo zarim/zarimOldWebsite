@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display:ital@0;1&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -22,10 +23,78 @@
             </div>
             <div class="about-me" name="about">
                 <p id="intro">Hi, I'm Zari.</p>
-                <p id="about">PhD Student,</p>
-                <p id="about">Author,</p>
-                <p id="about">Traveler,</p>
-                <p id="about">Occasional Software Engineer</p>
+                <p id="about"><button class="button-style" id="btn">PhD Student</button></p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="inner-text">Year 1 of...</p>
+                        <p id="inner-text">Research interest areas include: algorithmic bias, AI for good, ethics of AI, etc.</p>
+                        <p id="inner-text">Will add more information as I make more progress towards my degree.</p>
+                    </div>
+                </div>
+                <p id="about"><button class="button-style" id="btn">Author</button></p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="inner-text"><a id="remove-link-styling" target="_blank" href="https://www.amazon.com/18-Things-Ive-Learned-Years-ebook/dp/B07N45J462/ref=sr_1_2?dchild=1&keywords=18+things+i%27ve+learned+in+18+years&qid=1607726831&s=digital-text&sr=1-2">18 Things I've Learned in 18 Years</a></p>
+                        <div class="author-content">
+                            <div class="author-left">
+                                <a id="image-link" target="_blank" href="https://www.amazon.com/18-Things-Ive-Learned-Years-ebook/dp/B07N45J462/ref=sr_1_2?dchild=1&keywords=18+things+i%27ve+learned+in+18+years&qid=1607726831&s=digital-text&sr=1-2"><img id="cover" src="images/cover.jpg"></a>
+                            </div>
+                            <div class="author-right">
+                                <p id="author-title">About</p>
+                                <p id="author-text">A creative, insightful, and candid look at life through the eyes of an 18-year-old.</p>
+                                <p id="author-text">In her short life, Zari has graduated high school and started college at 16, studied abroad in London for 3 months, traveled to 6 different countries, visited almost half of the U.S., interned at one of the largest companies in the world, and set herself on the path to be financially free by the age of 30.</p>
+                                <p id="author-text">In her book, Zari aims to share 18 things that she has learned with hopes of educating and inspiring people to live the life they desire. While this is coming from an 18-year-old, people of any age can apply these lessons and improve or enhance their lives.</p>
+                                <p id="author-text">Click image or title to check out book.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p id="about"><button class="button-style" id="btn">Traveler</button></p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="inner-text">Traveler</p>
+                        <p id="traveler-text">I absolutely love to travel and one of my goals is to visit all 7 continents. Right now I've been to 4 of the continents (North & South America, Europe, and Asia). After I finish my PhD, I plan to take a yearlong-trip around the world where I hope to visit even more countries and continents.</p>
+                        <p id="traveler-text"><u>Countries Visited:</u> Mexico, Canada, UK, Ireland, Spain, France, Italy, Brazil, Japan...</p>
+                        <p id="traveler-text"><u>Bucket List:</u> Antartica, Singapore, Thailand, Indonesia, South Korea, South Africa, Egypt, Costa Rica, Cuba, Portugal, India, Australia, New Zealand, and many more.</p>
+                        <div class="photos">
+                            <img id="photo" src="images/casaMila.jpg">
+                            <img id="photo" src="images/christTheRedeemer.jpg">
+                            <img id="photo" src="images/coliseum.jpg">
+                            <img id="photo" src="images/dublinCastle.jpg">
+                            <img id="photo" src="images/eiffelTower.jpg">
+                            <img id="photo" src="images/dublinFountain.jpg">
+                            <img id="photo" src="images/fountain.jpg">
+                            <img id="photo" src="images/japan.jpg">
+                            <img id="photo" src="images/monaLisa.jpg">
+                            <img id="photo" src="images/rioForest.jpg">
+                            <img id="photo" src="images/rome.jpg">
+                            <img id="photo" src="images/tijicaForest.jpg">
+                        </div>
+                        <p id="traveler-text"> Swipe for more.</p>
+                    </div>
+                </div>
+                <p id="about"><button class="button-style" id="btn">Occasional Software Engineer</button></p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="inner-text">Occasional Software Engineer</p>
+                        <p id="github"><a id="github" target="_blank" href="https://github.com/zarim"><u>GitHub Link</u></a></p>
+                        <p id="explanation">Link to my GitHub with personal and class projects and homeworks.</p>
+                        <p id="github"><a id="github" target="_blank" href="https://zarim.github.io/CultureShockWebsite/"><u>Culture Shock Website</u></a></p>
+                        <p id="explanation">Link to website for a service project called Culture Shock. This project was supposed to be implemented in person in a classroom, but due to the Covid-19 pandemic, that couldn't happen. This site wa created to provide resources for a future in-person implementation of the project.</p>
+                        <p id="github"><a id="github" target="_blank" href="https://projectsiteswe.firebaseapp.com/"><u>SWE Project Site</u></a></p>
+                        <p id="explanation">Link to the project site that was used to keep track of a project in my Software Engineering class during undergrad. This project was created using React and is a single page site. The site captures the goals of the project, the people working on the project, and the work and documents that resulted from it.</p>
+                        <p id="github"><a id="github" target="_blank" href="https://glassceilingswe.firebaseapp.com/index.html"><u>Glass Ceiling SWE Project</u></a></p>
+                        <p id="explanation">Glass Ceiling was the name of the project that was done during my Software Engineering course in undergrad. The assignment was to create a job posting site similar to Glassdoor or Indeed, and this link leads to the results of that project. I worked on most of the frontend for this project along with some of the middle connecting the frontend to the backend.</p>
+                        <p id="software-text"><b>Software Engineering Intern at Microsoft - Summer 2019</b></p>
+                        <p id="explanation">During my second internship at Microsoft, I worked alone on a backend project. Since most of my prior experience had been in the frontend, I wanted to get experience in the backend. For this project, I was responsible for building a user context stream to keep track of user movement throughout two of the Business Application Group products. The purpose of the context stream was to be able to draw data about the user experience directly from the sites so that improvements could be made without relying on user feedback in surveys.</p>
+                        <p id="software-text"><b>Explore Intern at Microsoft - Summer 2018</b></p>
+                        <p id="explanation">During my first internship at Microsoft, I worked in a pod with two other interns. Our project for the summer was to create a job recommendation feature for some of Microsoft's Business Application Group products. I worked mostly on the frontend side of the project, but my podmates and I occasionally switched roles between middleware (connecting our feature to the ML model) and project management.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
