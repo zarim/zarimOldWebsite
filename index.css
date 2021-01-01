@@ -118,7 +118,8 @@ body {
 
 #about:hover {
     /* color: #935430; */
-    color: #3A353F;
+    /* color: #3A353F; */
+    color: black;
 }
 
 .button-style {
@@ -143,8 +144,8 @@ body {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    /* background-color: rgb(0,0,0);  */
+    /* background-color: rgba(0,0,0,0.4);  */
 }
   
   .modal-content {
@@ -167,14 +168,14 @@ body {
     font-size: 28px;
     font-weight: bold;
     /* color: #f1ece1; */
-    color: #23303D;
+    color: #86a1b3; 
 }
   
   .close:hover,
   .close:focus {
     /* color: black; */
     /* color: #3a353f; */
-    color: #c05850; 
+    color: #23303D;
     text-decoration: none;
     cursor: pointer;
 }
