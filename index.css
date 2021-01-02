@@ -417,8 +417,8 @@ body {
     }
 
     #about {
-        margin: 5% auto;
-        font-size: 35px;
+        margin: 10% auto;
+        font-size: 40px;
     }
 
     .contact {
@@ -446,20 +446,60 @@ body {
     .modal-content {
         max-height: 100%;
         width: 90%;
+        padding: 40px;
     }
 
     #author-text {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     #author-title {
-        font-size: 25px;
+        font-size: 35px;
+    }
+
+    .author-left {
+        float: none;
+    }
+
+    .author-right {
+        width: auto;
+    }
+
+    #image-link {
+        height: 400px;
     }
 
     #inner-text {
-        font-size: 25px;
+        font-size: 35px;
     }
 
+    #software-text {
+        font-size: 35px;
+    }
+
+    #explanation {
+        font-size: 35px;
+    }
+
+    #github {
+        font-size: 35px;
+    }
+
+    #traveler-text {
+        font-size: 35px;
+    }
+
+    .close {
+        font-size: 45px;
+    }
+
+    .photos {
+        height: 400px;
+    }
+
+    #photo {
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px)  {
@@ -498,18 +538,58 @@ body {
     .modal-content {
         max-height: 100%;
         width: 75%;
+        padding: 40px;
     }
 
     #author-text {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     #author-title {
-        font-size: 25px;
+        font-size: 35px;
+    }
+
+    .author-left {
+        float: none;
+    }
+
+    .author-right {
+        width: auto;
+    }
+
+    #image-link {
+        height: 400px;
     }
 
     #inner-text {
-        font-size: 25px;
+        font-size: 35px;
     }
 
+    #software-text {
+        font-size: 35px;
+    }
+
+    #explanation {
+        font-size: 35px;
+    }
+
+    #github {
+        font-size: 35px;
+    }
+
+    #traveler-text {
+        font-size: 35px;
+    }
+
+    .close {
+        font-size: 45px;
+    }
+
+    .photos {
+        height: 400px;
+    }
+
+    #photo {
+        height: 400px;
+    }
 }
