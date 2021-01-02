@@ -25,6 +25,9 @@ body {
 #head {
     font-family: 'Playfair Display', serif;
     font-size: 35px; 
+    margin-bottom: 2%;
+    text-align: center;
+    color: white;
 }
 
 #remove-link-styling {
@@ -150,14 +153,14 @@ body {
   
   .modal-content {
     /* background-color: #fefefe; */
-    margin: 8% auto; 
+    margin: 5% auto; 
     padding: 20px;
     /* border: 1px solid #888; */
     width: 70%;
     /* background-color: #505668; */
     /* background-color: #CBA688; */
     background-color: #cee6f6;
-    max-height: 500px;
+    max-height: 600px;
     overflow: scroll;
     /* height: fit-content; */
 }
@@ -318,7 +321,7 @@ body {
 
 .bottom-menu {
     width: 100%;
-    margin: 1% auto;
+    margin: 5% auto;
     color: white;
     display: inline-flex;
 }
@@ -364,4 +367,149 @@ body {
     line-height: 2.5em;
     color: #23303D;
     /* margin-right: 10%; */
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 1024px) and (max-width: 1400px)  {
+    #head {
+        font-size: 55px;
+    }
+    
+    .contact {
+        width: 45%;
+    }
+
+    #contact {
+        height: 45px;
+    }
+    
+    .modal {
+        position: absolute;
+    }
+
+    .modal-content {
+        max-height: 100%;
+        width: 75%;
+        margin: auto;
+    }
+
+    .image-cropper {
+        height: 450px;
+        width: 450px;
+    }
+
+    .bottom-menu {
+        display: block;
+    }
+
+    #about {
+        font-size: 35px;
+        margin: 5% auto;
+    }
+
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .bottom-menu {
+        display: block;
+        margin: 10% auto;
+    }
+
+    #about {
+        margin: 5% auto;
+        font-size: 35px;
+    }
+
+    .contact {
+        width: 45%;
+    }
+
+    .image-cropper {
+        height: 450px;
+        width: 450px;
+    }
+
+    #contact {
+        height: 45px;
+    }
+
+    #head {
+        margin-bottom: 5%;
+        font-size: 55px;
+    }
+
+    .modal {
+        position: absolute;
+    }
+
+    .modal-content {
+        max-height: 100%;
+        width: 90%;
+    }
+
+    #author-text {
+        font-size: 25px;
+    }
+
+    #author-title {
+        font-size: 25px;
+    }
+
+    #inner-text {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px)  {
+    .bottom-menu {
+        display: block;
+        margin: 10% auto;
+    }
+
+    #about {
+        margin: 10% auto;
+        font-size: 40px;
+    }
+
+    .contact {
+        width: 45%;
+    }
+
+    .image-cropper {
+        height: 450px;
+        width: 450px;
+    }
+
+    #contact {
+        height: 45px;
+    }
+
+    #head {
+        margin-bottom: 5%;
+        font-size: 55px;
+    }
+
+    .modal {
+        position: absolute;
+    }
+
+    .modal-content {
+        max-height: 100%;
+        width: 75%;
+    }
+
+    #author-text {
+        font-size: 25px;
+    }
+
+    #author-title {
+        font-size: 25px;
+    }
+
+    #inner-text {
+        font-size: 25px;
+    }
+
 }
