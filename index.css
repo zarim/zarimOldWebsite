@@ -3,24 +3,18 @@ html {
 }
 
 body {
-    /* background-color: #23303D; */
-    /* background-color: #395159; */
-    /* background-color: #c05850; */
-    /* background-color: #418ADE; */
-    /* background-color: #f5f5f5; */
     background-color: #34739b;
     height: 100%;
     position: relative;
 }
 
-.header-box {
+/* .header-box {
     display: none;
     margin: auto;
     margin-top: 1%;
     width: 75%;
     height: 15%;
-    /* background-color: #90A3A7; */
-}
+} */
 
 #head {
     font-family: 'Playfair Display', serif;
@@ -35,7 +29,7 @@ body {
     color: inherit;
 }
 
-.left-header {
+/* .left-header {
     display: flex;
     align-items: center;
     color: #EFEFEF;
@@ -50,7 +44,6 @@ body {
     float: right;
     width: 50%;
     height: 100%;
-    /* background-color: skyblue; */
 }
 
 #menu-item {
@@ -71,7 +64,7 @@ body {
     height: 80%;
     background-color: #EFEFEF;
     box-shadow: 0px 0px 25px;
-}
+} */
 
 #headshot {
     margin: auto;
@@ -91,37 +84,32 @@ body {
     border-radius: 50%;
 }
 
-#intro {
+/* #intro {
     font-family: 'Playfair Display', serif;
     font-size: 45px;
     text-align: center;
     letter-spacing: 1.5px;
     color: #23303D;
-}
+} */
 
-#background {
+/* #background {
     font-family: 'Playfair Display', serif;
     font-size: 15px;
     text-align: center;
     letter-spacing: 1px;
     color: #23303D;
-}
+} */
 
 #about {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 20px;
-    /* font-size: 30px; */
     margin: 2% auto;
-    /* width: 75%; */
     line-height: 1.5em;
-    /* color: #23303D; */
     color: white;
 }
 
 #about:hover {
-    /* color: #935430; */
-    /* color: #3A353F; */
     color: black;
 }
 
@@ -134,7 +122,6 @@ body {
 }
 
 #btn:focus {
-    /* color: #935430; */
     color: #3A353F;
 }
 
@@ -147,37 +134,26 @@ body {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    /* background-color: rgb(0,0,0);  */
-    /* background-color: rgba(0,0,0,0.4);  */
 }
   
-  .modal-content {
-    /* background-color: #fefefe; */
+.modal-content {
     margin: 5% auto; 
     padding: 20px;
-    /* border: 1px solid #888; */
     width: 70%;
-    /* background-color: #505668; */
-    /* background-color: #CBA688; */
     background-color: #cee6f6;
     max-height: 600px;
     overflow: scroll;
-    /* height: fit-content; */
 }
   
-  .close {
-    /* color:#23303D; */
+.close {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    /* color: #f1ece1; */
     color: #86a1b3; 
 }
   
-  .close:hover,
-  .close:focus {
-    /* color: black; */
-    /* color: #3a353f; */
+.close:hover,
+.close:focus {
     color: #23303D;
     text-decoration: none;
     cursor: pointer;
@@ -188,8 +164,6 @@ body {
     font-size: 20px; 
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
-    /* color: #23303D; */
-    /* color: #f1ece1; */
     color: #23303D;
 }
 
@@ -231,8 +205,6 @@ body {
     text-decoration: none;
     margin: auto;
     height: 300px;
-    /* max-width: 100%;
-    max-height: 100%; */
 }
 
 #author-title {
@@ -242,7 +214,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1em;
     color: #23303D;
-    /* color: #f1ece1; */
 }
 
 #author-text {
@@ -251,7 +222,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1em;
     color: #23303D;
-    /* color: #f1ece1; */
 }
 
 #traveler-text {
@@ -260,7 +230,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
     color: #23303D;
-    /* color: #f1ece1; */
     margin: 2%;
 }
 
@@ -283,7 +252,6 @@ body {
     line-height: 1.5em;
     color: #23303D;
     text-decoration: none;
-    /* color: #f1ece1; */
 }
 
 #software-text {
@@ -292,7 +260,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
     color: #23303D;
-    /* color: #f1ece1; */
 }
 
 #explanation {
@@ -301,7 +268,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
     color: #23303D;
-    /* color: #f1ece1; */
 }
 
 /* New design idea */
@@ -310,7 +276,6 @@ body {
     margin: auto;
     width: 75%;
     height: 75%;
-    /* background-color: #3D5361; */
     background-color: #34739b;
     position: absolute;
     top: 0;
@@ -343,12 +308,6 @@ body {
     filter: grayscale(1%);
     color: #3A353F;
 }
-/* 
-#contact:focus {
-    filter: grayscale(1%);
-    color: #3A353F;
-    outline: none;
-} */
 
 #form-text:focus {
     outline: none;
@@ -366,7 +325,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5em;
     color: #23303D;
-    /* margin-right: 10%; */
 }
 
 /* RESPONSIVENESS */
