@@ -53,8 +53,4 @@
         padding: 1%;
         width: 100%;
     }
-
-    /* .work-item:hover {
-        transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1);
-    } */
 </style>

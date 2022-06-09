@@ -1,46 +1,40 @@
 <script>
+    import { Link } from 'svelte-routing';
     export let page;
 </script>
 
 <div class="menu">
     {#if page == "about"}
-        <a href="/" class="menu-item-lined">about</a>
-        <a href="/education" class="menu-item">education</a>
-        <a href="/work" class="menu-item">work</a>
-        <a href="/life" class="menu-item">life</a>
+        <Link to="about" style="text-decoration: line-through;">about</Link>
+        <Link to="education">education</Link>
+        <Link to="work">work</Link>
+        <Link to="life">life</Link>
     {/if}
     {#if page == "education"}
-        <a href="/" class="menu-item">about</a>
-        <a href="/education" class="menu-item-lined">education</a>
-        <a href="/work" class="menu-item">work</a>
-        <a href="/life" class="menu-item">life</a>
+        <Link to="about">about</Link>
+        <Link to="education" style="text-decoration: line-through;">education</Link>
+        <Link to="work">work</Link>
+        <Link to="life">life</Link>
     {/if}
     {#if page == "work"}
-        <a href="/" class="menu-item">about</a>
-        <a href="/education" class="menu-item">education</a>
-        <a href="/work" class="menu-item-lined">work</a>
-        <a href="/life" class="menu-item">life</a>
+        <Link to="about">about</Link>
+        <Link to="education">education</Link>
+        <Link to="work" style="text-decoration: line-through;">work</Link>
+        <Link to="life">life</Link>
     {/if}
     {#if page == "life"}
-        <a href="/" class="menu-item">about</a>
-        <a href="/education" class="menu-item">education</a>
-        <a href="/work" class="menu-item">work</a>
-        <a href="/life" class="menu-item-lined">life</a>
+        <Link to="about">about</Link>
+        <Link to="education">education</Link>
+        <Link to="work">work</Link>
+        <Link to="life" style="text-decoration: line-through;">life</Link>
     {/if}
 </div>
 
 <style>
-    .menu-item {
+    :global(a) {
         margin: 0 0 0 5%;
         text-decoration: none;
         color: #323649;
-    }
-
-    .menu-item-lined {
-        margin: 0 0 0 5%;
-        text-decoration: none;
-        color: #323649;
-        text-decoration: line-through;
     }
 
     .menu {

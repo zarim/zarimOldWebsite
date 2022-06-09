@@ -27,7 +27,8 @@ module.exports = {
 				secure: false,
 				changeOrigin: true
 			}
-		}
+		},
+		hot: true
 	},
 	module: {
 		rules: [
@@ -40,7 +41,7 @@ module.exports = {
 							dev: !prod
 						},
 						emitCss: prod,
-						hotReload: !prod
+						hotReload: true
 					}
 				}
 			},
@@ -67,7 +68,4 @@ module.exports = {
 		})
 	],
 	devtool: prod ? false : 'source-map',
-	devServer: {
-		hot: true
-	}
 };

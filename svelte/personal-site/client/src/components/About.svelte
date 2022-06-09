@@ -1,7 +1,6 @@
 <script>
 	import Header from './Header.svelte'
 	import Intro from './Intro.svelte'
-
     let src="https://i.ibb.co/NFRyV8D/zari.jpg"
 </script>
 
