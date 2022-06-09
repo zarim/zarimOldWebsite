@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //Initiate MongoDB and start server
 app.listen(PORT, () => {
-    mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/your_preferred_db_name', { useNewUrlParser: true }).then((response) => {
+    mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/api/config', { useNewUrlParser: true }).then((response) => {
         console.log(`Connected to MongoDB and server started on PORT ${PORT}`);
     }).catch((err) => {
         console.log(err);
