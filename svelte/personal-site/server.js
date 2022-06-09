@@ -5,7 +5,8 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const {port, mongoURI} = require('./config')
-const resumeRoutes = require('./routes/resume')
+const workRoutes = require('./routes/work')
+const educationRoutes = require('./routes/education')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -15,7 +16,8 @@ mongoose.connect(mongoURI, {})
 .then(() => console.log("MongoDB database is connected"))
 .catch((err) => console.log(err))
 
-app.use('/api/resume', resumeRoutes)
+app.use('/api/work', workRoutes)
+app.use('/api/education', educationRoutes)
 
 app.get('/', (req, res) => res.send('hello world'))
 

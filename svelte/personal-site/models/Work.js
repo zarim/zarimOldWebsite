@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const ResumeSchema = new Schema({
+const WorkSchema = new Schema({
     title: {
         type: String, 
         required: true
@@ -17,8 +17,11 @@ const ResumeSchema = new Schema({
     },
     photo: {
         type: String
+    },
+    backgroundColor: {
+        type: String
     }
 })
 
-const Resume = model('resume', ResumeSchema)
-module.exports = Resume
+const Work = model('work', WorkSchema)
+module.exports = Work
