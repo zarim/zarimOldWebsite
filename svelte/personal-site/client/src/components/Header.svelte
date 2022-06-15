@@ -5,25 +5,25 @@
 
 <div class="menu">
     {#if page == "about"}
-        <Link to="about" style="text-decoration: line-through;">about</Link>
+        <Link to="/" style="text-decoration: line-through;">about</Link>
         <Link to="education">education</Link>
         <Link to="work">work</Link>
         <Link to="life">life</Link>
     {/if}
     {#if page == "education"}
-        <Link to="about">about</Link>
+        <Link to="/">about</Link>
         <Link to="education" style="text-decoration: line-through;">education</Link>
         <Link to="work">work</Link>
         <Link to="life">life</Link>
     {/if}
     {#if page == "work"}
-        <Link to="about">about</Link>
+        <Link to="/">about</Link>
         <Link to="education">education</Link>
         <Link to="work" style="text-decoration: line-through;">work</Link>
         <Link to="life">life</Link>
     {/if}
     {#if page == "life"}
-        <Link to="about">about</Link>
+        <Link to="/">about</Link>
         <Link to="education">education</Link>
         <Link to="work">work</Link>
         <Link to="life" style="text-decoration: line-through;">life</Link>

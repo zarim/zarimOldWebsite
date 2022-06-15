@@ -10,7 +10,6 @@
 
 <Router {url}>
   <div>
-    <Route path="about" component={About} />
     <Route path="education" component={Education} />
     <Route path="work" component={Work} />
     <Route path="life" component={Life} />

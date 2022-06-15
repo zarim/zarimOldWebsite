@@ -24,6 +24,19 @@ const EducationSchema = new Schema({
     },
     backgroundColor: {
         type: String
+    },
+    courses: {
+        type: Array
+    },
+    achievements: {
+        type: Array
+    },
+    description: {
+        type: String
+    },
+    img: {
+        data: Buffer,
+        type: String
     }
 })
 

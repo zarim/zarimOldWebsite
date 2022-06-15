@@ -41,7 +41,8 @@ module.exports = {
 							dev: !prod
 						},
 						emitCss: prod,
-						hotReload: true
+						hotReload: true,
+						hydratable: true
 					}
 				}
 			},

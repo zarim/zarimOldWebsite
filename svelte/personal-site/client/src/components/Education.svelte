@@ -1,9 +1,6 @@
 <script>
 	import Header from './Header.svelte'
-    import {EducationStore} from '../stores'
-    import { fade, scale } from 'svelte/transition'
     import EducationItem from './EducationItem.svelte'
-    import ItemContent from './ItemContent.svelte'
 	import axios from 'axios';
     import {onMount} from 'svelte';
 
