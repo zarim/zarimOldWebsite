@@ -1,6 +1,6 @@
 <script>
-	import Header from './Header.svelte'
+	import Menu from './Menu.svelte'
 	
 </script>
 
-<Header page={"life"}/>
+<Menu page={"life"}/>

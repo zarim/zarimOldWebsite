@@ -1,8 +1,9 @@
 <script>
-	import Header from './Header.svelte'
+	import Menu from './Menu.svelte'
 	import axios from 'axios';
     import {onMount} from 'svelte';
 	import WorkItem from './WorkItem.svelte'
+    import Header from './Header.svelte';
 
     let work = []
 
@@ -20,6 +21,7 @@
 </script>
 
 <Header page={"work"}/>
+<!-- <Menu page={"work"}/> -->
 
 <div class="work-container">
     {#each work as w}
@@ -33,7 +35,7 @@
     .work-container {
         display: flex;
         flex-flow: row wrap;
-        margin: 8% 0;
+        margin: 8%;
         justify-content: center;
     }
 

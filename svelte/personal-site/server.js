@@ -11,6 +11,11 @@ const educationRoutes = require('./routes/education')
 app.use(cors())
 app.use(bodyParser.json())
 app.use(morgan('tiny'))
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + "/public/index.html")
+  })
 
 mongoose.connect(mongoURI, {})
 .then(() => console.log("MongoDB database is connected"))

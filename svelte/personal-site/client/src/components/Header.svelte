@@ -1,46 +1,37 @@
 <script>
-    import { Link } from 'svelte-routing';
+import Menu from "./Menu.svelte";
+
     export let page;
 </script>
 
-<div class="menu">
-    {#if page == "about"}
-        <Link to="/" style="text-decoration: line-through;">about</Link>
-        <Link to="education">education</Link>
-        <Link to="work">work</Link>
-        <Link to="life">life</Link>
-    {/if}
-    {#if page == "education"}
-        <Link to="/">about</Link>
-        <Link to="education" style="text-decoration: line-through;">education</Link>
-        <Link to="work">work</Link>
-        <Link to="life">life</Link>
-    {/if}
-    {#if page == "work"}
-        <Link to="/">about</Link>
-        <Link to="education">education</Link>
-        <Link to="work" style="text-decoration: line-through;">work</Link>
-        <Link to="life">life</Link>
-    {/if}
-    {#if page == "life"}
-        <Link to="/">about</Link>
-        <Link to="education">education</Link>
-        <Link to="work">work</Link>
-        <Link to="life" style="text-decoration: line-through;">life</Link>
-    {/if}
+<div class="header-container">
+    <p class="name">Zari McFadden</p>
+    <p class="sub-text">Ph.D. Student / Durham Native / Spelman Woman</p>
+    <Menu page={page} />
 </div>
 
 <style>
-    :global(a) {
-        margin: 0 0 0 5%;
-        text-decoration: none;
-        color: #323649;
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 0.25px solid rgba(0, 0, 0, 0.2);
     }
 
-    .menu {
-        justify-content: flex-end;
-        display: flex;
-        font-size: 23px;
-        font-weight: 300;
+    .name {
+        text-align: center;
+        padding-top: 170px;
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+
+    .sub-text {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        /* color: rgba(91,94,110,.59); */
+        /* color: rgba(0, 0, 0, 0.6); */
+        font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 70px;
     }
 </style>
